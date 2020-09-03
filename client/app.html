@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Bangalore Home Price Prediction</title>
+</head>
+
+<body>
+    <h1>Bangalore Home Price Prediction</h1>
+    <div class="container">
+        <div class="row" style="padding-top: 8px;">
+            <div class=" col-sm-4 "></div>
+            <div class="col-sm-4 form1 ">
+                <form>
+                    <div class="form-group ">
+                        <h2 class="my-3">Area(Square Feet)</h2>
+                        <input class="area" type="text" class="floatLabel" id="uiSqft" name="Squareft" value="1000">
+                    </div>
+                    <h2>BHK</h2>
+                    <div class="switch-field">
+                        <input type="radio" id="radio-bhk-1" name="uiBHK" value="1" />
+                        <label for="radio-bhk-1">1</label>
+                        <input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+                        <label for="radio-bhk-2">2</label>
+                        <input type="radio" id="radio-bhk-3" name="uiBHK" value="3" />
+                        <label for="radio-bhk-3">3</label>
+                        <input type="radio" id="radio-bhk-4" name="uiBHK" value="4" />
+                        <label for="radio-bhk-4">4</label>
+                        <input type="radio" id="radio-bhk-5" name="uiBHK" value="5" />
+                        <label for="radio-bhk-5">5</label>
+                    </div>
+
+
+                    <h2>Bath</h2>
+                    <div class="switch-field ">
+                        <input type="radio" id="radio-bath-1" name="uiBathrooms" value="1" />
+                        <label for="radio-bath-1">1</label>
+                        <input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
+                        <label for="radio-bath-2">2</label>
+                        <input type="radio" id="radio-bath-3" name="uiBathrooms" value="3" />
+                        <label for="radio-bath-3">3</label>
+                        <input type="radio" id="radio-bath-4" name="uiBathrooms" value="4" />
+                        <label for="radio-bath-4">4</label>
+                        <input type="radio" id="radio-bath-5" name="uiBathrooms" value="5" />
+                        <label for="radio-bath-5">5</label>
+                    </div>
+                    <h2>Location</h2>
+                    <form>
+                        <div class="form-row align-items-center">
+                            <div class="col-auto my-1">
+                                <!-- <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label> -->
+                                <select class="location mr-sm-2" id="uiLocations">
+                                       <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+                                        <option>Electronic City</option>
+                                        <option>Rajaji Nagar</option>
+                                    </select>
+                            </div>
+
+                        </div>
+                    </form>
+
+                    <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+                    <div id="uiEstimatedPrice" class="result">
+                        <h3 style="color: red;"></h3>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous "></script>
+</body>
+
+</html>
